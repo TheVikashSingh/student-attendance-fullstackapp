@@ -1,0 +1,1 @@
+INSERT INTO students (studentname,studentgender,"date",ispresent) VALUES ('Vikash Singh', 'Male', '18th Sept, 2025', true);
