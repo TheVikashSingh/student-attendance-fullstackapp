@@ -1,0 +1,35 @@
+version: "3.8"
+
+services:
+  app:
+    build: ./backend/student-attendance-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    networks:
+      - vikash-network
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/mydb
+      SPRING_DATASOURCE_USERNAME: vikash
+      SPRING_DATASOURCE_PASSWORD: secret
+
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: vikash
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: mydb
+    #ports:
+    #  - "5432:5432"       # Map container port to host only if needed; #otherwise can skip#
+    networks:
+      - vikash-network
+    volumes:
+      - vikash-postgres-data:/var/lib/postgresql/data
+
+networks:
+  vikash-network:
+    driver: bridge
+
+volumes:
+  vikash-postgres-data:
