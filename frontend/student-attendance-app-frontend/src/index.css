@@ -5,6 +5,24 @@
 }
 
 body{
-    background-color: rgba(255, 228, 196, 0.709);
+    background-color: rgba(253, 245, 235, 0.709);
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+table{
+    border: 2px solid black;
+    margin: 20px auto;
+}
+
+th{
+    border: 1px solid black;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+.no-data{
+    color: rgb(190, 4, 4);
 }
