@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgba(253, 245, 235, 0.709);
+    background-color: rgba(200, 238, 153, 0.709);
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -25,4 +25,22 @@ td{
 
 .no-data{
     color: rgb(190, 4, 4);
+}
+
+.add-section{
+    border:2px solid black;
+    padding:5px 5px 5px;
+    margin:5px;
+    background-color: chartreuse;
+}
+
+.update-section{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(234, 233, 172);
+    padding: 2px;
+    gap:10px
 }
