@@ -31,7 +31,7 @@ td{
     border:2px solid black;
     padding:5px 5px 5px;
     margin:5px;
-    background-color: chartreuse;
+    background-color: rgb(136, 203, 68);
 }
 
 .update-section{
@@ -40,7 +40,7 @@ td{
     margin: 5px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(234, 233, 172);
+    background-color: rgb(178, 201, 151);
     padding: 2px;
     gap:10px
 }

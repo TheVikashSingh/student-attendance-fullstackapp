@@ -143,6 +143,10 @@ export const Homepage = () => {
         return <h2>Loading...</h2>
     }
 
+    if(isError){
+        return <h2 style={{font:"red"}}>An error occurred!</h2>
+    }
+
   return (
     <>
     <div className="main-text">

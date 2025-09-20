@@ -1,0 +1,7 @@
+1. Do NOT include node_modules/ or target/       Docker will install/build them itself. Delete these.
+
+2. Now run 
+
+git clone <your-repo-url>
+cd project-root
+docker-compose up --build
